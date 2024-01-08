@@ -1,0 +1,193 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98777,98776,98772,98773,98775,98770,98771,98769');
+#news-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'SF Pro Display', sans-serif;
+    overflow: hidden;
+}
+#news-section .bbt{
+    padding: 12px 20px;
+    border-radius: 24px;
+    background-color: #0048D5;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'SF Pro Display', sans-serif;   
+    }
+            
+#news-section .ht{
+    font-size: 30pt;
+    font-weight: bold;
+    margin: 0;
+    }
+#news-section .st{
+    font-size: 16pt;
+    color: #737373;
+    font-weight: 400;
+    max-width: 30%;
+    margin: 22px 0;
+    }
+#news-section .tc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 274px;
+    text-align: center;
+    z-index: 1;
+    }
+#news-section .vic{
+    position: relative;
+    width: 856px;
+    height: 340px;
+    }
+#news-section .vic .visuel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    object-fit: cover;
+    }
+
+/* Rose pastel */
+#news-section .rc{
+    position: absolute;
+    left: -20;
+}
+#news-section .rc img{
+    position: absolute;
+    top: 55;
+    left: 180;
+    z-index: 3;
+}
+#news-section .rose-pastel{
+position: absolute;
+width: 193px;
+height: 36.88px;
+top: -15;
+left: 90;
+font-family: 'SF Pro Display',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 30.5202px;
+line-height: 36px;
+text-align: center;
+background: linear-gradient(90.54deg, #9C63A8 -0.32%, #E4B4EE 88.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+}
+/* Violet pastel */
+#news-section .vc{
+    position: absolute;
+    right: -20;
+}
+#news-section .vc img{
+    position: absolute;
+    top: 15;
+    right: 70;
+    z-index: 3;
+}
+#news-section .violet-pastel {
+position: absolute;
+top: -55;
+right: 2;
+width: 177px;
+height: 50px;
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 30.5202px;
+line-height: 36px;
+text-align: center;
+background: linear-gradient(91.02deg, #A66AF2 11.3%, #6122A5 88.9%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+}
+/* Responsive */
+@media screen and (max-width: 600px) {
+#news-section{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: clip;
+}
+#news-section .ht{
+    font-size: 24pt;
+    width: 100%;
+    }
+#news-section .st{
+    font-size: 14pt;
+    max-width: 80%;
+    margin: 12px 0;
+        }
+#news-section .vic{
+    width: 348px;
+    height: 348px;
+    margin-bottom: -30px;
+    }
+#news-section .vc{
+    right: -10;
+}
+#news-section .vc img{
+    top: -40;
+    right: 40;
+}
+#news-section .violet-pastel {
+    font-size: 26px;
+    top:-100;
+    right: 0;
+}
+#news-section .rc{
+    left: -20;
+}
+#news-section .rc img{
+    top: -15;
+    left: 75;
+}
+#news-section .rose-pastel{
+    font-size: 26px;
+    top:-85;
+    left: 0;
+}
+}
+
+</style>
+<section id="news-section">
+    <div class="tc">
+        <h1 class="ht">Des nouveautés 2024</h1>
+        <h6 class="st">Découvrez la liste de nos nouveautés et restock</h6>
+        <a href="#"><button class="bbt">Découvrir</button></a>
+    </div>
+    <div class="vic">
+        <div class="rc">
+            <h1 class="rose-pastel">rose pastel</h1>
+            <img src="./assets/RUnion.svg" alt="rose pastel">
+        </div>
+
+        <div class="vc">
+            <h1 class="violet-pastel">violet pastel</h1>
+            <img src="./assets/VUnion.svg" alt="violet pastel">
+        </div>
+        <img class="visuel" src="./assets/new-section.png" alt="visuel1">
+    </div>
+</section>
