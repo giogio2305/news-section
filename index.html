@@ -260,19 +260,19 @@ font-size: 12px;
     // first modal display
     rp.addEventListener('click', function(){
         var modal = document.getElementById("fmodal");
-        if (modal.style.opacity === '0') {
-            modal.style.opacity = '1'
-        } else {
+        if (modal.style.opacity === '1') {
             modal.style.opacity = '0'
+        } else {
+            modal.style.opacity = '1'
         }
     });
         // second modal display
         vp.addEventListener('click', function(){
         var modal = document.getElementById("smodal");
-        if (modal.style.opacity === '0') {
-            modal.style.opacity = '1'
-        } else {
+        if (modal.style.opacity === '1') {
             modal.style.opacity = '0'
+        } else {
+            modal.style.opacity = '1'
         }
     });
 </script>
