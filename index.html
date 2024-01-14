@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     font-family: 'SF Pro Display', sans-serif;
     overflow: hidden;
 }
@@ -122,35 +122,6 @@ background: linear-gradient(91.02deg, #A66AF2 11.3%, #6122A5 88.9%);
 background-clip: text;
 color: transparent;
 }
-#news-section .vic .rc .fmodal{
-position: relative;
-max-width: 280px;
-padding: 50px 10px 15px 20px;;
-height: auto;
-border-radius: 6px;
-box-shadow: 0 3px 10px #00000030;
-background-color: #fff;
-color: #222;
-z-index: 10;
-margin-left: 100px;
-opacity: 0;
-transition: opacity 0.3s ease-in-out;
-}
-#news-section .vic .vc .smodal{
-position: relative;
-max-width: 280px;
-padding: 50px 10px 15px 20px;;
-height: auto;
-border-radius: 6px;
-box-shadow: 0 3px 10px #00000030;
-background-color: #fff;
-color: #222;
-z-index: 10;
-margin-top: -40px;
-margin-right: -60px;
-opacity: 0;
-transition: opacity 0.3s ease-in-out;
-}
 /* Responsive */
 @media screen and (max-width: 600px) {
 #news-section{
@@ -202,25 +173,6 @@ transition: opacity 0.3s ease-in-out;
     top:-85;
     left: 0;
 }
-
-#news-section .vic .rc .fmodal{
-max-width: 176px;
-padding: 40px 6px 10px 12px;
-height: auto;
-z-index: 10;
-margin-left: 8px;
-margin-top: -68px;
-font-size: 12px;
-}
-#news-section .vic .vc .smodal{
-max-width: 176px;
-padding: 40px 6px 10px 12px;
-height: auto;
-z-index: 10;
-margin-right: 0px;
-margin-top: -78px;
-font-size: 12px;
-}
 }
 
 </style>
@@ -234,45 +186,13 @@ font-size: 12px;
         <div class="rc">
             <h1 id="rose-pastel" class="rose-pastel">rose pastel</h1>
             <img src="./assets/RUnion.svg" alt="rose pastel">
-            <div id="fmodal" class="fmodal">
-                <p>
-                Put your sleeved cards into binders to organise, store and trade.
-                </p>
-            </div>
         </div>
 
         <div class="vc">
             <h1 id="violet-pastel" class="violet-pastel">violet pastel</h1>
             <img src="./assets/VUnion.svg" alt="violet pastel">
-            <div id="smodal" class="smodal">
-                <p>
-                Put your sleeved cards into binders to organise, store and trade.
-                </p>
-            </div>
         </div>
         <img class="visuel" src="./assets/new-section.png" alt="visuel1">
     </div>
 </section>
 
-<script>
-    var rp = document.getElementById('rose-pastel');
-    var vp = document.getElementById('violet-pastel');
-    // first modal display
-    rp.addEventListener('click', function(){
-        var modal = document.getElementById("fmodal");
-        if (modal.style.opacity === '1') {
-            modal.style.opacity = '0'
-        } else {
-            modal.style.opacity = '1'
-        }
-    });
-        // second modal display
-        vp.addEventListener('click', function(){
-        var modal = document.getElementById("smodal");
-        if (modal.style.opacity === '1') {
-            modal.style.opacity = '0'
-        } else {
-            modal.style.opacity = '1'
-        }
-    });
-</script>
